@@ -1,3 +1,5 @@
+ifeq ($(RELEASE_TYPE),microG)
+
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -35,3 +37,4 @@ LOCAL_USES_LIBRARIES := com.android.location.provider
 LOCAL_ENFORCE_USES_LIBRARIES := false
 include $(BUILD_PREBUILT)
 
+endif
